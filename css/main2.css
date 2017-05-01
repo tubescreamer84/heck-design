@@ -1,0 +1,313 @@
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*********************************************************************************
+FONTS
+*********************************************************************************/
+@font-face {
+    font-family: 'GlacialIndifferenceRegular';
+    src: url('fonts/GlacialIndifference-Regular.eot');
+    src: url('fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GlacialIndifference-Regular.woff') format('woff'),
+        url('fonts/GlacialIndifference-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('fonts/GlacialIndifference-Italic.eot');
+    src: url('fonts/GlacialIndifference-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GlacialIndifference-Italic.woff') format('woff'),
+    url('fonts/GlacialIndifference-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GlacialIndifferenceBold';
+    src: url('fonts/GlacialIndifference-Bold.eot');
+    src: url('fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/GlacialIndifference-Bold.woff') format('woff'),
+        url('fonts/GlacialIndifference-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+p{
+    line-height: 1.25em;
+    font-size: 2rem;
+    /*font-size:1.2rem;*/
+}
+
+.transparent{
+    background: transparent;
+    height: 6rem;
+}
+
+.margin5{
+    margin-top:2rem;
+}
+
+/*********************************************************************************
+Headings
+*********************************************************************************/
+.jumbotron .inner-wrap.vert-center {
+    align-self: center;
+    padding-top: 0;
+}
+
+h2 {
+    font-family: 'GlacialIndifferenceBold', Arial, sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: .025rem;
+    /* margin-top: 3em; */
+}
+
+
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-family: 'GlacialIndifferenceBold', Arial, sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+    /*color: #fff;*/
+    text-align: center;
+    margin-bottom: 6rem;
+}
+ 
+section.overlay{
+        padding-top: 5%;
+        padding-bottom: 5%;
+}
+
+.padding5{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+/* =========================================================================
+   Flexbox
+   ========================================================================== */
+.reverse{
+    flex-direction:row-reverse;
+}
+/*********************************************************************************
+Header
+*********************************************************************************/
+.logo {
+    width: 18rem;
+    margin-top: 1rem;
+}
+
+.transparent {
+    background: transparent;
+    height: 6rem;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    background: transparent;
+    height: 6rem;
+    padding: 0 2rem;
+    width:100%;
+}
+
+header.scrolling{
+    background:#383838;
+}
+
+/*********************************************************************************
+MENU
+*********************************************************************************/
+.menu{ 
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 5.5rem;
+    /* height: 100%; */
+    align-items: center;
+    transition: all .65s ease-in-out !important;
+    -moz-transition: all .65s ease-in-out;
+    -webkit-transition: all .65s ease-in-out;
+}
+
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.menu ul li{
+    display: inline-block;
+    text-align: left;
+    margin-right: 2em;
+    transition: all .25s ease-in-out !important;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+.menu .border {
+    width: 0;
+}
+
+.menu .active .border {
+    height: .2rem;
+    width: 100%;
+    /* width: 0; */
+    background: #fff;
+    transition: all .25s ease-in-out !important;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    text-align: center;
+}
+
+.active > a {
+    color: #ee5c29 !important;
+}
+/*********************************************************************************
+JUMBOTRON
+*********************************************************************************/
+
+.jumbotron {
+    background: url(../img/jerome.jpg) center / cover;
+    /* background: rgba(76, 166, 175, 0.92); */
+    /* background: transparent; */
+    min-height: 799px;
+    position: relative;
+    display: flex;
+}
+
+.jumbotron .over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* filter: grayscale(100%); */
+    right: 0;
+    /* mix-blend-mode: darken; */
+    z-index: 1;
+    background: rgba(0,0,0,1);
+    mix-blend-mode: hue;
+    transition: all 2.75s ease-in-out !important;
+    -moz-transition: all .65s ease-in-out;
+    -webkit-transition: all .65s ease-in-out;
+}
+
+.jumbotron .inner-wrap {
+    /* align-self: center; */
+    text-align: center;
+    width: 100%;
+    padding-top: 5.5rem;
+}
+
+.jumbotron .inner-wrap.vert-center {
+    align-self: center;
+    padding-top: 0;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.scroll-down {
+    left: 0;
+    right: 0;
+    /* transform: rotate(-90deg); */
+    bottom: 5rem;
+    width: 8rem;
+    height: 8rem;
+    font-size: 8rem !important;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    cursor: pointer;
+    transition: all .25s ease-in-out !important;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    /* background: #fff; */
+}
+
+.front-page .scroll-up {
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+
+/*********************************************************************************
+CSS Animations
+*********************************************************************************/
+.easing {
+    transition: all 1.25s ease-in-out !important;
+    -moz-transition: all 1.25s ease-in-out;
+    -webkit-transition: all 1.25s ease-in-out;
+}
+
+.easing-faster {
+    transition: all .25s ease-in-out !important;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+
+/*********************************************************************************
+OUR WORK
+*********************************************************************************/
+.our-work h2 {
+    color: #fff;
+    color:#a9a9a9;
+    /* margin-bottom: 2em; */
+}
+
+.overlay.our-work {
+    /*background: rgba(76, 166, 175, 0.92);
+    background: #4ca6af;*/
+}
+
+.more-info {
+    display: none;
+    margin-top: 2em;
+    border: .1em solid;
+    text-align: left;
+}
+
+/*.button {
+    padding: .5em .75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 1em;
+    min-width: 6.5em;
+}*/
+
+.more-info h3 {
+    margin-left: 1em;
+}
