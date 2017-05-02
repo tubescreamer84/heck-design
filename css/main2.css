@@ -45,7 +45,7 @@ FONTS
 }
 
 p{
-    line-height: 1.25em;
+    line-height: 2.75rem;
     font-size: 2rem;
     /*font-size:1.2rem;*/
 }
@@ -70,7 +70,7 @@ Headings
 h2 {
     font-family: 'GlacialIndifferenceBold', Arial, sans-serif;
     /* font-family: 'Oswald', sans-serif; */
-    text-align: center;
+    /*text-align: center;*/
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
@@ -90,12 +90,12 @@ h1{
     text-transform: uppercase;
     /*color: #fff;*/
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
  
 section.overlay{
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 7.5%;
+        padding-bottom: 7.5%;
 }
 
 .padding5{
@@ -108,6 +108,10 @@ section.overlay{
    ========================================================================== */
 .reverse{
     flex-direction:row-reverse;
+}
+
+.column.pad5{
+    padding:5%;
 }
 /*********************************************************************************
 Header
@@ -275,6 +279,17 @@ CSS Animations
     -webkit-transition: all .25s ease-in-out;
 }
 
+/*********************************************************************************
+ABOUT
+*********************************************************************************/
+
+section.about {  
+    color: #fff;
+    background: #4c66ae;
+    background-image: url(../img/sayagata-400px-transparent.png);
+    /*padding-top:10%;
+    padding-bottom:10%;*/
+}
 
 /*********************************************************************************
 OUR WORK
@@ -282,19 +297,24 @@ OUR WORK
 .our-work h2 {
     color: #fff;
     color:#a9a9a9;
+    color:#676767;
     /* margin-bottom: 2em; */
 }
 
 .overlay.our-work {
-    /*background: rgba(76, 166, 175, 0.92);
-    background: #4ca6af;*/
+    position: relative;
+    overflow: hidden;
 }
 
 .more-info {
     display: none;
-    margin-top: 2em;
+    padding: 2.5%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: .1em solid;
     text-align: left;
+    border: 0.25rem solid #606c76;
+    border-radius: .4rem;
 }
 
 /*.button {
@@ -310,4 +330,20 @@ OUR WORK
 
 .more-info h3 {
     margin-left: 1em;
+}
+
+.our-work .angle{
+    background: #ececec;
+    width: 150%;
+    left: -25%;
+    height: 65vw;
+    position: absolute;
+    top: 56%;
+    z-index: 0;
+    transform: rotate(25deg);
+}
+
+.our-work .column{
+    position: relative;
+    z-index: 1;
 }

@@ -42,11 +42,14 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
- 
+     /*background-color: #606c76;
+    border-color: #606c76;
+    color: #fff;*/
+    outline: 0;
     background-color: transparent;
-    border: 0.25rem solid #fff;
+    border: 0.25rem solid #606c76;
     border-radius: .4rem;
-    color: #fff;
+    color: #606c76;
     cursor: pointer;
     display: inline-block;
     font-size: 1.5rem;
