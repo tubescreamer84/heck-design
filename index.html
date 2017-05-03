@@ -54,7 +54,7 @@
 
 <!-- About Section -->
 
-      <section class="overlay about container-fluid">
+      <section class="overlay about container-fluid" id="about">
           <div class="container">
           <div class="row">
         <div class="column">
@@ -157,7 +157,7 @@ END CODE
 
     <!--End Our Work -->
 
-      <!--
+      
       <section class="overlay contact">
           <div class="inner-wrap vert-center">
           <h1>Contact Us</h1>
@@ -165,37 +165,100 @@ END CODE
             <div class="column"></div>
               <div class="column white-text contact-right">
                 <h3>Heck Design Studio</h3>
-                <p>Chehalis, WA</p>
-              <p>Phone: 360.388.6428</p>
-              <p>hello@heck.design</p>
+                <p>Chehalis, WA<br>
+                Phone: 360.388.6428<br>
+                hello@heck.design</p>
             </div>
             <div class="column">
-              <form action="#">
+              <form method="POST" action="http://formspree.io/josh@heck.design" id="contact-form">
               <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="name">
-                <label class="mdl-textfield__label" for="name">Name</label>
+                  <label class="mdl-textfield__label" for="name">Name</label>
+                <input class="mdl-textfield__input" type="text" id="name" name="name" required>
+                
               </div>
                 <div class="mdl-textfield mdl-js-textfield">
-                 <input class="mdl-textfield__input" type="text" id="phone">
-                <label class="mdl-textfield__label" for="phone">Phone</label>
+                    <label class="mdl-textfield__label" for="email">Email</label>
+                 <input class="mdl-textfield__input" type="text" id="email" name="email" required>
+                
               </div>
 
               <div class="mdl-textfield mdl-js-textfield">
+
+                    <label class="mdl-textfield__label" for="schools">Message</label>
                 <textarea class="mdl-textfield__input" type="text" rows="3"
-                 id="schools"></textarea>
-                <label class="mdl-textfield__label" for="schools">Message</label>
+                 id="schools" name="message" required></textarea>
+                
               </div>
+              <input class="is-hidden" type="text" name="_gotcha">
+
               <button class="mdl-button mdl-js-button mdl-button--raised">
                 Submit
               </button>
 
               </form>
+<!--
+              <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+      action="https://heckdesign.wufoo.com/forms/zd1c8hc01qwu5z/#public">
+  
+<ul>
+<li id="foli1" class="notranslate">
+<label class="desc" id="title1" for="Field1">
+Name
+<span id="req_1" class="req">*</span>
+</label>
+<div>
+<input id="Field1" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup=""       required />
+</div>
+</li>
+<li id="foli4" class="notranslate      ">
+<label class="desc" id="title4" for="Field4">
+Email
+<span id="req_4" class="req">*</span>
+</label>
+<div>
+<input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2"       required />
+</div>
+</li>
+<li id="foli5"
+class="notranslate"><label class="desc" id="title5" for="Field5">
+Message
+</label>
+
+<div>
+<textarea id="Field5"
+name="Field5"
+class="field textarea medium"
+spellcheck="true"
+rows="10" cols="50"
+
+tabindex="3"
+onkeyup=""
+       ></textarea>
+
+</div>
+</li> <li class="buttons ">
+<div>
+
+                    <input id="saveForm" name="saveForm" class="btTxt submit"
+    type="submit" value="Submit"
+ /><a href="https://master.wufoo.com/forms/m7p0x3/def/field1=heckdesign.wufoo.com/forms/heck-design/"
+target="_blank" class="hide">Report Abuse</a>
+</div>
+</li>
+
+<li class="hide">
+<label for="comment">Do Not Fill This Out</label>
+<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+<input type="hidden" id="idstamp" name="idstamp" value="OGdFZc2MyJ1N08g25qDDOYvGGC38/tIAVG7FvIpu6Uc=" />
+</li>
+</ul>
+</form>-->
             </div>
           
              <div class="column"></div>
         </div>
         </div>
-      </div>-->
+      </div>
     
   
        
@@ -209,6 +272,7 @@ END CODE
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       
         <script src="js/main2.js"></script>
+        <script src="js/formspree.js"></script>
         <script src="https://use.fontawesome.com/a00887c243.js"></script>
 </footer>
     
