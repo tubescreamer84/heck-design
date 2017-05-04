@@ -220,6 +220,10 @@ JUMBOTRON
     -webkit-transition: all .65s ease-in-out;
 }
 
+.jumbotron .over.fade{
+    background: 0,0,0,0;
+}
+
 .jumbotron .inner-wrap {
     /* align-self: center; */
     text-align: center;
@@ -347,6 +351,10 @@ OUR WORK
     z-index: 1;
 }
 
+.flex-wrap{
+    height:100%;
+    align-items: center;
+}
 /*********************************************************************************
 CONTACT
 *********************************************************************************/

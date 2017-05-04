@@ -7,6 +7,7 @@ $(document).ready(function(){
     });
 
 
+    $('.over').addClass('fade');
 
 });
 
