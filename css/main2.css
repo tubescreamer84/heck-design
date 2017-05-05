@@ -89,8 +89,8 @@ h1{
 }
  
 section.overlay{
-        padding-top: 7.5%;
-        padding-bottom: 7.5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
 }
 
 .padding5{
@@ -131,7 +131,7 @@ header {
     z-index: 100;
     background: transparent;
     height: 6rem;
-    padding: 0 2rem;
+    padding: 0 4rem;
     width:100%;
 }
 
@@ -150,7 +150,7 @@ MENU
     right: 0;
     display: flex;
     flex-direction: column;
-    height: 5.5rem;
+    height: 8rem;
     /* height: 100%; */
     align-items: center;
     transition: all .65s ease-in-out !important;
@@ -253,7 +253,7 @@ header ul li a {
     font-size: 8rem !important;
     margin: 0 auto;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     color: #fff;
     cursor: pointer;
     transition: all .25s ease-in-out !important;
@@ -304,6 +304,15 @@ OUR WORK
     /* margin-bottom: 2em; */
 }
 
+.our-work .dark,.our-work .dark h2{
+    color:#fff;
+}
+
+.our-work .dark .button{
+    color:#fff;
+    border-color:#fff;
+}
+
 .overlay.our-work {
     position: relative;
     overflow: hidden;
@@ -337,13 +346,14 @@ OUR WORK
 
 .our-work .angle{
     background: #ececec;
+    background: #383838;
     width: 150%;
     left: -25%;
     height: 65vw;
     position: absolute;
     top: 56%;
     z-index: 0;
-    transform: rotate(25deg);
+    transform: rotate(6deg);
 }
 
 .our-work .column{
@@ -354,6 +364,10 @@ OUR WORK
 .flex-wrap{
     height:100%;
     align-items: center;
+}
+
+.text-center{
+    text-align:center;
 }
 /*********************************************************************************
 CONTACT
@@ -394,4 +408,16 @@ input[type='email']:focus, input[type='number']:focus, input[type='password']:fo
     outline: 0;
     background:#fff;
     color:#000;
+}
+
+
+@media screen and (max-width:45rem){
+   .row .column.column-50{
+        display: block;
+        flex: 1 1 auto;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
